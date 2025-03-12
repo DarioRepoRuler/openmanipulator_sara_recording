@@ -160,6 +160,7 @@ include_directories(
 ## in contrast to setup.py, you can choose the destination
 catkin_install_python(PROGRAMS
   scripts/republish_pose.py
+  scripts/move_in_z.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
