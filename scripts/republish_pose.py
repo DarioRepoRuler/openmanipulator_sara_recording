@@ -9,7 +9,7 @@ def publish_pose():
     
     source_frame = rospy.get_param('~source_frame', 'world')
     target_frame = rospy.get_param('~target_frame', 'end_effector_link')
-    pose_pub = rospy.Publisher('pose', PoseStamped, queue_size=10)
+    pose_pub = rospy.Publisher('current_pose', PoseStamped, queue_size=10)
     listener = tf.TransformListener()
     
     rate = rospy.Rate(10)  # 10 Hz
